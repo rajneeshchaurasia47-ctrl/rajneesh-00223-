@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box generate</title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html,*{
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        #main{
+            width: 900px;
+            height: 300px;
+            background-color: lch(85.58% 105.26 139.79);
+            margin: 0 auto;
+            display: flex;
+        }
+        #left{
+            width: 580px;
+            height: 300px;
+            background-color: lab(91.84% -25.59 88.99);
+        }
+
+        #right{
+            width: 580px;
+            height: 300px;
+            background-color: lch(67.75% 43.44 248.05);
+            margin-left: 20px;
+        }
+        .rgt_box{
+            height: 140px;
+            background-color: hwb(350 3% 11%);
+        }
+        .rgt_box:nth-child(2){
+            margin-top: 20px;
+            
+        }
+</style>
+</head>
+<body>
+    <div id ="main">
+
+        <div id="left"></div>
+
+        <div id="right">
+            <div class="rgt_box">
+                <div class="rgt_box">
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
